@@ -7,7 +7,7 @@ usuarios = []
 
 class Usuario(pydantic.BaseModel):
     id: 1
-    nome: Isa
+    nome: "Isa"
 
 @api.delete("/usuarios/{id}", status_code=204)
 def deletar_usuario(id: int):
