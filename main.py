@@ -6,8 +6,8 @@ api = fastapi.FastAPI()
 usuarios = []
 
 class Usuario(pydantic.BaseModel):
-    id: int
-    nome: str
+    id: 1
+    nome: Isa
 
 @api.delete("/usuarios/{id}", status_code=204)
 def deletar_usuario(id: int):
